@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px auto 20px;
+}
+.info { display: flex; }
+.name { display: flex; flex-direction: column; margin-left: 20px;}
+h2 { font-size: 1rem;}
+.dp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.feed-designation {
+    opacity: 50%;
+}
+.review-para{
+    opacity: 70%;
+    line-height: 140%;
+}
+
+
+.first-feed, .second-feed, .third-feed, .fourth-feed, .fifth-feed {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.first-feed  {    
+    background-color: hsl(263, 55%, 52%); 
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0%; 
+}    
+.second-feed { background-color: hsl(217, 19%, 35%); }
+.third-feed, .fifth-feed {    color: hsl(217, 19%, 35%); background-color: #ffffff;}
+.fourth-feed { background-color: hsl(219, 29%, 14%); }
+
+@media screen and (min-width: 791px)  { 
+    *{
+        box-sizing: border-box;
+    }
+    .container {
+        display: flex;
+        flex-direction:row;
+        height: 700px;
+        margin: 50px auto auto auto;
+        overflow: hidden;
+        width: 90vw;
+        max-width: 1040px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .first-feed, .second-feed, .third-feed, .fourth-feed  {
+        margin: 20px;
+        height: 240px;
+        overflow: hidden;
+    }
+    .sub-container-1 {
+        margin: 0px;
+        flex-basis: 75%;
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .first-feed  {   width: 60%;    ; }
+    .second-feed {   width: 25% ;  flex-grow: 1 ;}
+    .third-feed  {   width: 25%;    }
+    .fourth-feed {   width: 60%;     flex-grow: 1 ;}
+
+    .sub-container-2 { margin: 0; flex-basis: 25%; }
+     .fifth-feed {
+        margin: 20px;
+        height: 520px;
+        overflow: hidden;
+    }
+    .review-para{
+        margin: 0px auto 0px auto;
+        line-height: 120%
+    }
+
+}
